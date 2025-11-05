@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-color: #21D4FD;
+                background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+                background-size:cover;
+                min-height:98vh;
+                color:white;
+                margin-top: 10px;}
+                
+               
+            
+            .parent-container{
+                text-align:center;
+                width:50%;
+                
+                /* border:1px solid white; */
+                margin:auto;
+                
+            
+            }
+
+            .parent-container .fa-user{
+                font-size:3.5rem;
+                
+            }
+            .parent-container h1{
+                font-family:Arial, Helvetica, sans-serif
+                
+            }
+            .parent-container .form-class{
+                text-align:left;
+                margin-bottom:10px;
+            }
+            .parent-container .form-class label{
+                font-size:1.2rem;
+                margin-left:8%;
+            }
+            .parent-container .form-class input{
+                padding:10px;
+                width:80%;
+                margin-left:8%;
+                border:none;
+            }
+            .parent-container .check-group{
+                margin-top:30px;
+                font-size:1.2rem;
+                text-align:left;
+                margin-left:8%;
+                margin-bottom:10px;
+            }
+            .parent-container .btn-login{
+                border:none;
+                margin-bottom:12px;
+                padding:10px;
+                width:83%;
+                margin-left:-9px;
+                background-color:#21D4FD;
+                color:white;
+            }
+
+            .btn-login:hover{
+
+               background-color:bisque;
+               color:rgb(37, 81, 119);
+                
+                
+            }
+            .parent-container .links a{
+                color:white;
+                text-decoration: none;
+            }
+           .links:hover {
+                text-decoration:underline;
+            }
+
+
+
+        </style>
+</head>
+<body>
+    <div class="parent-container">
+    <p> <i class="fa-regular fa-user"></i> </p>
+    <h1>Member Login</h1>
+    <form>
+        <div class="form-class">
+            <label for="username">Username *</label><br/>
+            <input type="email" id="username" placeholder="Enter your email"/>
+        </div>
+        <div class="form-class">
+            <label for="password">Password *</label><br/>
+            <input type="password" placeholder="Enter you password"/>
+        </div>
+        <div class="check-group">
+            <input type="checkbox" id="checkbox"/>
+            <label for="checkbox">Remember me</label>
+        </div>
+        <button class="btn-login">LOGIN</button>
+        <div class="links">
+            <a href="">Register</a>
+            <a href="">Forgot password</a>
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>
